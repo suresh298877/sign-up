@@ -38,7 +38,7 @@ app.post("/",(req,res)=>{
     // const jsonData=JSON.stringify(data);
     try{
         mailchimp.setConfig({
-            apiKey: "89a825f0288107d9b5fe0d23ac389b86-us21",
+            apiKey: "7ef26f517dbb628c0448ea26ab1ac22d-us21",
             server: "us21",
         });
         const run = async () => {
@@ -56,11 +56,11 @@ app.post("/",(req,res)=>{
           res.send("<h1>login successfull</h1>")
     }
     catch{
-        res.send("<h1>Login failed try againing</h1>")
+        res.send("<h1>Login failed try again</h1>")
     }
 });
 
-app.listen(process.env.PORT||3000,()=>{
+app.listen(process.env.PORT||8080,()=>{
     console.log("server is running on port 3000");
 })
 
