@@ -38,7 +38,7 @@ app.post("/",(req,res)=>{
     // const jsonData=JSON.stringify(data);
     try{
         mailchimp.setConfig({
-            apiKey: "7ef26f517dbb628c0448ea26ab1ac22d-us21",
+            apiKey: "b50802e833bfa01b87de58f327b7c615-us21",
             server: "us21",
         });
         const run = async () => {
